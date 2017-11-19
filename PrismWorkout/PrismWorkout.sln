@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.UI", "Wpf.UI\Wpf.UI.csproj", "{5C503AE8-55D4-4FAA-8BB6-F8A4E5853763}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Infra", "Wpf.Infra\Wpf.Infra.csproj", "{1E58321F-180C-4FBD-882D-8A1B69C17E75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5C503AE8-55D4-4FAA-8BB6-F8A4E5853763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C503AE8-55D4-4FAA-8BB6-F8A4E5853763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C503AE8-55D4-4FAA-8BB6-F8A4E5853763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

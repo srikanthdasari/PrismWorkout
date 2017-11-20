@@ -5,6 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Prism.Modularity;
+using Wpf.ModuleA;
+using Prism.Regions;
+using System.Windows.Controls;
+using Wpf.Infra;
 
 namespace Wpf.UI
 {
@@ -20,6 +25,35 @@ namespace Wpf.UI
             base.InitializeShell();
             App.Current.MainWindow = (Window)Shell;
             App.Current.MainWindow.Show();
+        }
+
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            ModuleCatalog catalog = new ModuleCatalog();
+            catalog.AddModule(typeof(ModuleAModule));
+            return catalog;
+        }
+
+        //protected override IModuleCatalog CreateModuleCatalog()
+        //{
+        //  return new DirectoryModuleCatalog() { ModulePath=@".\Modules" };
+        //}
+        //protected override void ConfigureModuleCatalog()
+        //{
+        //    Type moduleAType = typeof(ModuleAModule);
+        //    ModuleCatalog.AddModule(new ModuleInfo()
+        //    {
+        //        ModuleName = moduleAType.Name,
+        //        ModuleType = moduleAType.AssemblyQualifiedName,
+        //        InitializationMode = InitializationMode.WhenAvailable
+        //    });
+        //}
+
+        protected override RegionAdapterMappings ConfigureRegionAdapterMappings()
+        {
+            RegionAdapterMappings mappings = base.ConfigureRegionAdapterMappings();
+            mappings.RegisterMapping(typeof(StackPanel), Container.TryResolve<StackPanelRegionAdapter>());
+            return mappings;
         }
     }
 }

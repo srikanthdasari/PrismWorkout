@@ -119,5 +119,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wpf.Infra\Wpf.Infra.csproj">
+      <Project>{1e58321f-180c-4fbd-882d-8a1b69c17e75}</Project>
+      <Name>Wpf.Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wpf.ModuleA\Wpf.ModuleA.csproj">
+      <Project>{09ebf79d-493b-49e9-9594-9a798d1506f2}</Project>
+      <Name>Wpf.ModuleA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

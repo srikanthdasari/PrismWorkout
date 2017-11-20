@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.UI", "Wpf.UI\Wpf.UI.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Infra", "Wpf.Infra\Wpf.Infra.csproj", "{1E58321F-180C-4FBD-882D-8A1B69C17E75}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{C53265C1-2256-4A4F-8EB2-92A612C32F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.ModuleA", "Wpf.ModuleA\Wpf.ModuleA.csproj", "{09EBF79D-493B-49E9-9594-9A798D1506F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E58321F-180C-4FBD-882D-8A1B69C17E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EBF79D-493B-49E9-9594-9A798D1506F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EBF79D-493B-49E9-9594-9A798D1506F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EBF79D-493B-49E9-9594-9A798D1506F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EBF79D-493B-49E9-9594-9A798D1506F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09EBF79D-493B-49E9-9594-9A798D1506F2} = {C53265C1-2256-4A4F-8EB2-92A612C32F97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3FFEF192-5168-4527-A55E-787774F2C19E}

@@ -36,6 +36,7 @@ namespace Wpf.UI
 
         //protected override IModuleCatalog CreateModuleCatalog()
         //{
+        //  Loading Modules from file system
         //  return new DirectoryModuleCatalog() { ModulePath=@".\Modules" };
         //}
         //protected override void ConfigureModuleCatalog()
@@ -48,6 +49,17 @@ namespace Wpf.UI
         //        InitializationMode = InitializationMode.WhenAvailable
         //    });
         //}
+        //protected override IModuleCatalog CreateModuleCatalog()
+        //{ 
+        // Loading Modules from Resources 
+        //  return ModuleCatalog.CreateFromXaml(new Uri("/PrismWorkOut;cmponent/Generic.xaml",UriKind.Relative));
+        //}
+        //protected override IModuleCatalog CreateModuleCatalog()
+        //{ 
+        // Loading Modules from app.config 
+        //  return new ConfigurationModuleCatalog();
+        //}
+
 
         protected override RegionAdapterMappings ConfigureRegionAdapterMappings()
         {

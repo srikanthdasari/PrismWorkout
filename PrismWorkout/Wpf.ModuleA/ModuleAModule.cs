@@ -20,12 +20,21 @@ namespace Wpf.ModuleA
 
         public void Initialize()
         {
+            _container.RegisterType<ToolbarView>();
+            _container.RegisterType<IContentView, ContentView>();
+            _container.RegisterType<IContentViewModel, ContentViewModel>();
+
             IRegion region = _regionManager.Regions[ConstRegionNames.ToolBarRegion];
             region.Add(_container.Resolve<ToolbarView>());
             region.Add(_container.Resolve<ToolbarView>());
             region.Add(_container.Resolve<ToolbarView>());
             //_regionManager.RegisterViewWithRegion(ConstRegionNames.ToolBarRegion, typeof(ToolbarView));
-            _regionManager.RegisterViewWithRegion(ConstRegionNames.ContentRegion, typeof(ContentView));
+
+            //_regionManager.RegisterViewWithRegion(ConstRegionNames.ContentRegion, typeof(IContentView));
+            var vm = _container.Resolve<IContentViewModel>();
+            vm.Message = "First View";
+            _regionManager.Regions[ConstRegionNames.ContentRegion].Add(vm.View);
+
         }
     }
 }

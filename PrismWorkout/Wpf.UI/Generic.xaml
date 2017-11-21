@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Wpf.UI"
+                    xmlns:Modularity="clr-namespace:Prism.Modularity;assembly=Prism.Wpf">
+
+    <!--<Modularity:ModuleInfo Ref="file://Wpf.ModuleA.dll" ModuleName="Wpf.ModuleA" ModuleType="ModuleA.ModuleAModule, ModuleA, Version=1.0.0.0" />-->
+</ResourceDictionary>

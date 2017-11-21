@@ -12,17 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Wpf.Infra;
 
 namespace Wpf.ModuleA
 {
     /// <summary>
     /// Interaction logic for ContentView.xaml
     /// </summary>
-    public partial class ContentView : UserControl
+    public partial class ContentView : UserControl, IContentView
     {
         public ContentView()
         {
             InitializeComponent();
+        }
+
+        public IViewModel ViewModel
+        {
+            get { return (IContentViewModel)DataContext; }
+            set { DataContext = value; }
         }
     }
 }
